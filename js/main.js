@@ -1,11 +1,15 @@
 const tariffaKm = 0.21;
-const spanCosto = document.getElementById('#costo');
+const spanCosto = document.getElementById('costo');
 
-alert('Benvenuto, inserisci la tua età e quanti KM devi percorrere.')
-
-let age = prompt("Età: ");
-let userKm = prompt("KM: ");
+alert('Benvenuto, inserisci la tua età e quanti KM devi percorrere.');
+let age = parseInt(prompt("Età: "));
+let userKm = parseInt(prompt("KM: "));
+let price = (tariffaKm * userKm).toFixed(2);
 
 if (age < 18) {
-    spanCosto.innerHTML = (tariffaKm * userKm) - 20%;
+    spanCosto.innerHTML = (price) - (price * .20) + '€';
+} else if (age > 65) {
+    spanCosto.innerHTML = (price) - (price * .40) + '€';
+} else {
+    spanCosto.innerHTML = price.toFixed(2) + '€';
 }
