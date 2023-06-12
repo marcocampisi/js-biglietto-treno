@@ -1,2 +1,12 @@
 @import "reset.css";
 @import "general.css";
+
+* {
+    background-image: url(https://img.freepik.com/free-vector/stylish-white-background-with-diagonal-lines_1017-33199.jpg?w=2000&t=st=1686571499~exp=1686572099~hmac=77c7592de0247c599739dd4068a2e3644546161904af4df81c74a162e12f86bc);
+}
+
+#titolo {
+    margin: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
