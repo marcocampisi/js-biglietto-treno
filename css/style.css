@@ -7,9 +7,14 @@
 
 #cost-container {
     padding: 20px;
+    text-align: center;
 }
 
 #titolo {
     font-size: 2em;
     font-weight: bold;
+}
+
+#costo {
+    font-size: 2em;
 }
